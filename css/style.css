@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
+    background-color: black;
+}
+
+header {
+    height: 900px;
+    background: linear-gradient(
+        to right,
+        black 0%,
+        black 37.5%,
+        #181823 37.5%,
+        #181823 100%
+    );
+}
+
+.conteiner {
+    position: relative;
+    width: 1440px;
+    margin: auto;
+}
+
+.header-top {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.header-menu {
+    width: 480px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-menu-logo, .header-foto-small, .header-foto-smallest {
+    display: none;
+}
+
+.hmenu-item {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.header-bottom {
+    /* height: 810px; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-text {
+    color: white;
+    position: absolute;
+    left: 700px;
+    width: 740px;
+}
+
+.header-label {
+    font-size: 78px;
+    font-weight: bold;
+}
+
+.header-span {
+    opacity: 0.5;
+}
+
+/* Experience section */
+
+.experience-top {
+    margin: auto;
+    margin-top: 120px;
+    max-width: 1300px;
+}
+
+.experience-label {
+    color: #8491A0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.experience-text {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    width: 690px;
+}
+
+.experience-bottom {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.exp-item {
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+}
+
+.exp-number {
+    color: #8491A0;
+    font-size: 117px;
+}
+
+.exp-name {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.exp-description {
+    color: #8491A0;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.exp-accent1 {
+    color: #3CC74E;
+}
+
+.exp-accent2 {
+    color: #609BFF;
+}
+
+.exp-accent3 {
+    color: #E95D90;
+}
+
+/* philosophy section */
+
+.philosophy {
+    background-color: #FFF3E4;
+    height: 600px;
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        height: auto;
+        background: none;
+    }
+
+    .conteiner, .experience-text{
+        width: 100%;
+    }
+
+    .header-top {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header-bottom {
+        width: 90%;
+        margin: auto;
+    }
+
+    .header-foto {
+        display: none;
+    }
+
+    .header-foto-small {
+        display: inline;
+        margin-left: 30px;
+    }
+
+    .header-text {
+        left: 50%;
+        width: 50%;
+    }
+
+    .header-label {
+        font-size: 56px;
+    }
+
+    /* Experience section */
+
+    .experience-bottom, .experience-top {
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .experience-top {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteiner {
+        margin: auto;
+    }
+
+    .header-menu, .header-foto-small {
+        display: none;
+    }
+
+    .header-menu-logo, .header-foto-smallest {
+        display: inline;
+    }
+
+    .header-bottom {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-text {
+        margin-top: 40px;
+        position: static;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .header-label {
+        font-size: 32px;
+    }
+
+    /* Experience section */
+
+    .experience-text {
+        font-size: 32px;
+    }
+
+    .experience-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}
