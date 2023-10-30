@@ -1,242 +1,332 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-    font-family: 'Sen', sans-serif;
-    background-color: black;
+   font-family: "Sen", sans-serif;
+   background-color: black;
 }
 
 header {
-    height: 900px;
-    background: linear-gradient(
-        to right,
-        black 0%,
-        black 37.5%,
-        #181823 37.5%,
-        #181823 100%
-    );
+   height: 900px;
+   background: linear-gradient(to right, black 0%, black 37.5%, #181823 37.5%, #181823 100%);
 }
 
 .conteiner {
-    position: relative;
-    width: 1440px;
-    margin: auto;
+   position: relative;
+   width: 1440px;
+   margin: auto;
 }
 
 .header-top {
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 70px;
-    padding-right: 70px;
+   height: 90px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 70px;
+   padding-right: 70px;
 }
 
 .header-menu {
-    width: 480px;
-    display: flex;
-    justify-content: space-around;
+   width: 480px;
+   display: flex;
+   justify-content: space-around;
 }
 
-.header-menu-logo, .header-foto-small, .header-foto-smallest {
-    display: none;
+.header-menu-logo,
+.header-foto-small,
+.header-foto-smallest {
+   display: none;
 }
 
 .hmenu-item {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
 }
 
 .header-bottom {
-    /* height: 810px; */
-    display: flex;
-    align-items: center;
-    position: relative;
+   /* height: 810px; */
+   display: flex;
+   align-items: center;
+   position: relative;
 }
 
 .header-text {
-    color: white;
-    position: absolute;
-    left: 700px;
-    width: 740px;
+   color: white;
+   position: absolute;
+   left: 700px;
+   width: 740px;
 }
 
 .header-label {
-    font-size: 78px;
-    font-weight: bold;
+   font-size: 78px;
+   font-weight: bold;
 }
 
 .header-span {
-    opacity: 0.5;
+   opacity: 0.5;
 }
 
 /* Experience section */
 
 .experience-top {
-    margin: auto;
-    margin-top: 120px;
-    max-width: 1300px;
+   margin: auto;
+   margin-top: 120px;
+   max-width: 1300px;
 }
 
 .experience-label {
-    color: #8491A0;
-    font-size: 16px;
-    text-transform: uppercase;
+   color: #8491a0;
+   font-size: 16px;
+   text-transform: uppercase;
 }
 
 .experience-text {
-    color: white;
-    font-size: 55px;
-    font-weight: bold;
-    width: 690px;
+   color: white;
+   font-size: 55px;
+   font-weight: bold;
+   width: 690px;
 }
 
 .experience-bottom {
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 150px;
-    width: 1300px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+   margin: auto;
+   margin-top: 50px;
+   margin-bottom: 150px;
+   width: 1300px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 15px;
 }
 
 .exp-item {
-    height: 247px;
-    display: flex;
-    flex-direction: column;
-    justify-items: left;
+   height: 247px;
+   display: flex;
+   flex-direction: column;
+   justify-items: left;
 }
 
 .exp-number {
-    color: #8491A0;
-    font-size: 117px;
+   color: #8491a0;
+   font-size: 117px;
 }
 
 .exp-name {
-    color: white;
-    font-size: 24px;
-    margin-top: 10px;
+   color: white;
+   font-size: 24px;
+   margin-top: 10px;
 }
 
 .exp-description {
-    color: #8491A0;
-    font-size: 16px;
-    margin-top: 30px;
+   color: #8491a0;
+   font-size: 16px;
+   margin-top: 30px;
 }
 
 .exp-accent1 {
-    color: #3CC74E;
+   color: #3cc74e;
 }
 
 .exp-accent2 {
-    color: #609BFF;
+   color: #609bff;
 }
 
 .exp-accent3 {
-    color: #E95D90;
+   color: #e95d90;
 }
 
 /* philosophy section */
 
 .philosophy {
-    background-color: #FFF3E4;
-    height: 600px;
+   background-color: #fff3e4;
+   height: 600px;
+}
+
+.philosophy-all {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.philosophy-label {
+   font-size: 55px;
+   font-weight: bold;
+}
+
+.philosophy-main {
+   color: #5b6876;
+   font-size: 18px;
+   margin-top: 30px;
+}
+
+.philosophy-link {
+   width: 116px;
+   color: #181823;
+   text-decoration: underline;
+   text-underline-offset: 10px;
+   text-decoration-color: #8491a0;
+}
+
+.philosophy-left {
+   margin-left: 70px;
+   height: 370px;
+   width: 550px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.philosophy-image-small,
+.philosophy-image-smallest {
+   display: none;
 }
 
 @media screen and (max-width: 1440px) {
-    header {
-        height: auto;
-        background: none;
-    }
+   header {
+      height: auto;
+      background: none;
+   }
 
-    .conteiner, .experience-text{
-        width: 100%;
-    }
+   .conteiner,
+   .experience-text {
+      width: 100%;
+   }
 
-    .header-top {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+   .header-top {
+      padding-left: 30px;
+      padding-right: 30px;
+   }
 
-    .header-bottom {
-        width: 90%;
-        margin: auto;
-    }
+   .header-bottom {
+      width: 90%;
+      margin: auto;
+   }
 
-    .header-foto {
-        display: none;
-    }
+   .header-foto {
+      display: none;
+   }
 
-    .header-foto-small {
-        display: inline;
-        margin-left: 30px;
-    }
+   .header-foto-small {
+      display: inline;
+      margin-left: 30px;
+   }
 
-    .header-text {
-        left: 50%;
-        width: 50%;
-    }
+   .header-text {
+      left: 50%;
+      width: 50%;
+   }
 
-    .header-label {
-        font-size: 56px;
-    }
+   .header-label {
+      font-size: 56px;
+   }
 
-    /* Experience section */
+   /* Experience section */
 
-    .experience-bottom, .experience-top {
-        padding: 0 30px;
-        width: 100%;
-    }
+   .experience-bottom,
+   .experience-top {
+      padding: 0 30px;
+      width: 100%;
+   }
 
-    .experience-top {
-        margin-top: 100px;
-    }
+   .experience-top {
+      margin-top: 100px;
+   }
+
+   /* philosophy section */
+
+   .philosophy-image {
+      display: none;
+   }
+
+   .philosophy-image-small {
+      display: inline;
+   }
+
+   .philosophy-left {
+      width: auto;
+   }
+
+   .philosophy-left-top {
+      width: 90%;
+   }
 }
 
 @media screen and (max-width: 768px) {
-    .conteiner {
-        margin: auto;
-    }
+   .conteiner {
+      margin: auto;
+   }
 
-    .header-menu, .header-foto-small {
-        display: none;
-    }
+   .header-menu,
+   .header-foto-small {
+      display: none;
+   }
 
-    .header-menu-logo, .header-foto-smallest {
-        display: inline;
-    }
+   .header-menu-logo,
+   .header-foto-smallest {
+      display: inline;
+   }
 
-    .header-bottom {
-        flex-direction: column;
-        width: 100%;
-    }
+   .header-bottom {
+      flex-direction: column;
+      width: 100%;
+   }
 
-    .header-text {
-        margin-top: 40px;
-        position: static;
-        width: 100%;
-        padding: 0 30px;
-    }
+   .header-text {
+      margin-top: 40px;
+      position: static;
+      width: 100%;
+      padding: 0 30px;
+   }
 
-    .header-label {
-        font-size: 32px;
-    }
+   .header-label {
+      font-size: 32px;
+   }
 
-    /* Experience section */
+   /* Experience section */
 
-    .experience-text {
-        font-size: 32px;
-    }
+   .experience-text {
+      font-size: 32px;
+   }
 
-    .experience-bottom {
-        display: flex;
-        flex-direction: column;
-    }
+   .experience-bottom {
+      display: flex;
+      flex-direction: column;
+   }
+
+   /* philosophy section */
+
+   .philosophy {
+      background-color: black;
+   }
+
+   .philosophy-image-small {
+      display: none;
+   }
+
+   .philosophy-image-smallest {
+      display: inline;
+   }
+
+   .philosophy-all {
+      flex-direction: column;
+   }
+
+   .philosophy-left {
+      background-color: #fff3e4;
+      margin-left: 0;
+      height: 450px;
+   }
+
+   .philosophy-label {
+      font-size: 32px;
+      margin: 30px;
+   }
+
+   .philosophy-main {
+      margin: 0 30px;
+   }
 }
